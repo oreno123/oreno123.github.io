@@ -1,0 +1,15 @@
+/* 所有归档页面的横幅容器，直接覆盖样式 */
+body.archive #page-header,
+body.year-archive #page-header,
+body.month-archive #page-header {
+  background: linear-gradient(-45deg, #4158d0, #8692f6, #4fc3f7, #29b6f6) !important;
+  background-size: 400% 400% !important;
+  animation: gradientFlow 18s ease infinite !important;
+  height: 400px !important;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
